@@ -22,11 +22,10 @@ public class IndexController {
     private QuestionService questionService;
 
     @GetMapping("/")
-    public String index(HttpServletRequest request,
-                        Model model,
+    public String index(Model model,
                         @RequestParam(name = "page",defaultValue = "1")Integer page,
                         @RequestParam(name = "size",defaultValue = "5")Integer size) {
-        Cookie[] cookies = request.getCookies();
+        /*Cookie[] cookies = request.getCookies();
         if (cookies != null && cookies.length != 0)
             for (Cookie cookie : cookies) {
                 if (cookie.getName().equals("token")) {
@@ -38,7 +37,7 @@ public class IndexController {
                     }
                     break;
                 }
-            }
+            }*/
 
         PaginationDTO pagination = questionService.list(page,size);
         model.addAttribute("pagination", pagination);
