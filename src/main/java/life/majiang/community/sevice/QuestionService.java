@@ -3,6 +3,8 @@ package life.majiang.community.sevice;
 
 import life.majiang.community.entity.PaginationDTO;
 import life.majiang.community.entity.QuestionDTO;
+import life.majiang.community.exception.CustomizeErrorCode;
+import life.majiang.community.exception.CustomizeException;
 import life.majiang.community.mapper.QuestionMapper;
 import life.majiang.community.mapper.UserMapper;
 import life.majiang.community.model.Question;
@@ -107,6 +109,9 @@ public class QuestionService {
 
     public QuestionDTO getById(Integer id) {
         Question question = questionMapper.selectByPrimaryKey(id);
+        if (question == null){
+            throw new CustomizeException(CustomizeErrorCode.QUESTION_ONT_FOUND);
+        }
         QuestionDTO questionDTO = new QuestionDTO();
         BeanUtils.copyProperties(question,questionDTO);
         User user = userMapper.selectByPrimaryKey(question.getCreator());
@@ -130,7 +135,11 @@ public class QuestionService {
             QuestionExample example = new QuestionExample();
             example.createCriteria()
                     .andIdEqualTo(question.getId());
-            questionMapper.updateByExampleSelective(updateQuestion,new QuestionExample());
+           int updated = questionMapper.updateByExampleSelective(updateQuestion,new QuestionExample());
+           //没有更新
+           if (updated !=1){
+               throw new CustomizeException(CustomizeErrorCode.QUESTION_ONT_FOUND);
+           }
         }
     }
 
