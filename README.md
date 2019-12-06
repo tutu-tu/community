@@ -8,4 +8,5 @@
 [github building oauth apps](https://developer.github.com/apps/building-oauth-apps/creating-an-oauth-app/)
 [bootstrap](https://v3.bootcss.com/components)
 ## 工具
-[git]https://git-scm.com/download
+[git](https://git-scm.com/download)
+mvn -Dmybatis.generator.overwrite=true mybatis-generator:generate
