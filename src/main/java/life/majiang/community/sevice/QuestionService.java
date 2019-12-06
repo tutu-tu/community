@@ -143,10 +143,13 @@ public class QuestionService {
         }
     }
 
-    /*public void incView(Integer id) {
-        Question question = questionMapper.getById(id);
+    public void incView(Integer id) {
+        Question question = questionMapper.selectByPrimaryKey(id);
         Question updataQuestion = new Question();
         updataQuestion.setViewCount(question.getViewCount()+1);
-        questionMapper.update(updataQuestion);
-    }*/
+        QuestionExample questionExample = new QuestionExample();
+        questionExample.createCriteria()
+                .andIdEqualTo(id);
+        questionMapper.updateByExampleSelective(updataQuestion,questionExample);
+    }
 }
