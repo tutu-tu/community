@@ -5,6 +5,7 @@ import life.majiang.community.entity.PaginationDTO;
 import life.majiang.community.entity.QuestionDTO;
 import life.majiang.community.exception.CustomizeErrorCode;
 import life.majiang.community.exception.CustomizeException;
+import life.majiang.community.mapper.QuestionExtMapper;
 import life.majiang.community.mapper.QuestionMapper;
 import life.majiang.community.mapper.UserMapper;
 import life.majiang.community.model.Question;
@@ -25,6 +26,8 @@ public class QuestionService {
     private QuestionMapper questionMapper;
     @Autowired(required = false)
     private UserMapper userMapper;
+    @Autowired(required = false)
+    private QuestionExtMapper questionExtMapper;
 
     public PaginationDTO list(Integer page, Integer size) {
         PaginationDTO paginationDTO = new PaginationDTO();
@@ -65,7 +68,7 @@ public class QuestionService {
         return paginationDTO;
     }
 
-    public PaginationDTO listByUserId(Integer userId, Integer page,Integer size) {
+    public PaginationDTO listByUserId(Long userId, Integer page,Integer size) {
         PaginationDTO paginationDTO = new PaginationDTO();
          Integer totalPage;
         //总数
@@ -107,7 +110,7 @@ public class QuestionService {
         return paginationDTO;
     }
 
-    public QuestionDTO getById(Integer id) {
+    public QuestionDTO getById(Long id) {
         Question question = questionMapper.selectByPrimaryKey(id);
         if (question == null){
             throw new CustomizeException(CustomizeErrorCode.QUESTION_ONT_FOUND);
@@ -124,6 +127,9 @@ public class QuestionService {
             //创建
             question.setGmtCreate(System.currentTimeMillis());
             question.setGmtModified(question.getGmtCreate());
+            question.setViewCount(0);
+            question.setLikeCount(0);
+            question.setCommentCount(0);
             questionMapper.insert(question);
         }else{
             //更新
@@ -143,13 +149,17 @@ public class QuestionService {
         }
     }
 
-    public void incView(Integer id) {
-        Question question = questionMapper.selectByPrimaryKey(id);
+    public void incView(Long id) {
+        /*Question question = questionMapper.selectByPrimaryKey(id);
         Question updataQuestion = new Question();
         updataQuestion.setViewCount(question.getViewCount()+1);
         QuestionExample questionExample = new QuestionExample();
         questionExample.createCriteria()
-                .andIdEqualTo(id);
-        questionMapper.updateByExampleSelective(updataQuestion,questionExample);
+                .andIdEqualTo(id);*/
+        Question question = new Question();
+        question.setId(id);
+        question.setViewCount(1);
+        questionExtMapper.incView(question);
+        /*questionMapper.updateByExampleSelective(updataQuestion,questionExample);*/
     }
 }
