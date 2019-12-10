@@ -21,6 +21,7 @@ function post(){
                     //如果你登录
                     if(isAccepted){
                         window.open("https://github.com/login/oauth/authorize?client_id=572f119c724905b046f1&redirect_uri=http://localhost:8888/callback&scope=user&state=1");
+                        window.localStorage.setItem("closable",true);
                     }
                 }else {
                     alert(response.message);

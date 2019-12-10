@@ -10,6 +10,18 @@
     <script src="js/bootstrap.min.js"></script>
 
 </head>
+<script type="application/javascript">
+    window.onload = function () {
+        var closable = window.localStorage.getItem("closable");
+        if (closable == "true"){
+            //关闭浏览器
+            window.close();
+            //把参数移除
+            window.localStorage.removeItem("closable");
+        }
+    }
+
+</script>
 <body>
 
 <div th:insert="~{navigation.html :: nav}"></div>
