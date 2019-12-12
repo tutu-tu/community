@@ -17,7 +17,8 @@ function post(){
         }),
         success: function (response) {
             if (response.code == 200){
-                $("#comment_section").hide();
+                window.location.reload();
+                // $("#comment_section").hide();
             }else {
                 if (response.code == 2003){
                     //弹出一个登录框，问是否登录
