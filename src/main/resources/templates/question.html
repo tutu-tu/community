@@ -14,7 +14,7 @@
 
 </head>
 <body>
-//导航栏
+<!--导航栏-->
 <div th:insert="~{navigation.html :: nav}"></div>
 
 <div class="container-fluid main " >
@@ -35,7 +35,7 @@
                 <hr class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <!--标签-->
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 question-tag" >
-                    <span class="label label-info question-tag" th:each="tag : ${question.tag.split('，')}">
+                    <span class="label label-info question-tag" th:each="tag : ${question.tag.split(',')}">
                         <span class="glyphicon glyphicon-tags"></span>
                         <span class="label label-info" th:text="${tag}"></span>
                     </span>
@@ -131,11 +131,20 @@
                         </h5>
                     </div>
                 </div>
-                <hr>
             </div>
-
+            <hr class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 " >
+                <h5>美女壁纸</h5>
+                <img class="img-thumbnail question-wallpaper" src="/img/preview.jpg" />
+            </div>
+            <hr class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 " >
                 <h4>相关问题</h4>
+                <ul class="question-related">
+                    <li th:each="related : ${relatedQuestions}">
+                        <a th:href="@{'/question/'+${related.id}}" th:text="${related.title}"></a>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
