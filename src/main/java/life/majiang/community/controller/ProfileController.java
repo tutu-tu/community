@@ -3,6 +3,7 @@ package life.majiang.community.controller;
 import life.majiang.community.entity.PaginationDTO;
 import life.majiang.community.mapper.UserMapper;
 import life.majiang.community.model.User;
+import life.majiang.community.sevice.NotificationService;
 import life.majiang.community.sevice.QuestionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -20,6 +21,8 @@ public class ProfileController {
     private UserMapper userMapper;
     @Autowired(required = false)
     private QuestionService questionService;
+    @Autowired(required = false)
+    private NotificationService notificationService;
 
     @GetMapping("/profile/{action}")
     public String profile(HttpServletRequest request,
@@ -27,21 +30,7 @@ public class ProfileController {
               @RequestParam(name = "page",defaultValue = "1")Integer page,
               @RequestParam(name = "size",defaultValue = "5")Integer size,
                           Model model){
-        /*User user = null;
-        Cookie[] cookies = request.getCookies();
-        if (cookies != null && cookies.length != 0) {
-            for (Cookie cookie : cookies) {
-                if (cookie.getName().equals("token")) {
-                    //如果是前后端分离项目，可以在这里加一个验证信息，返回一个验证错误，登录一超时等等
-                    String token = cookie.getValue();
-                    user = userMapper.findByToken(token);
-                    if (user != null) {
-                        request.getSession().setAttribute("user", user);
-                    }
-                    break;
-                }
-            }
-        }*/
+
         User user = (User) request.getSession().getAttribute("user");
         if (user == null){
             return "redirect:/";
@@ -50,12 +39,17 @@ public class ProfileController {
         if ("questions".equals(action)){
             model.addAttribute("section","questions");
             model.addAttribute("sectionName","我的问题");
+            PaginationDTO paginationDTO = questionService.listByUserId(user.getId(),page,size);
+            model.addAttribute("pagination", paginationDTO);
         }else if ("replies".equals(action)){
+            PaginationDTO paginationDTO = notificationService.list(user.getId(),page,size);
+            /*Long unreadCount = notificationService.unreadCount(user.getId());*/
+            model.addAttribute("pagination", paginationDTO);
+            /*model.addAttribute("unreadCount", unreadCount);*/
             model.addAttribute("section","replies");
             model.addAttribute("sectionName","最新回复");
         }
-        PaginationDTO paginationDTO = questionService.listByUserId(user.getId(),page,size);
-        model.addAttribute("pagination", paginationDTO);
+
         return "profile";
     }
 }

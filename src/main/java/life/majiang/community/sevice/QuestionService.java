@@ -69,10 +69,11 @@ public class QuestionService {
             questionDTO.setUser(user);
             questionDTOList.add(questionDTO);
         }
-        paginationDTO.setQuestions(questionDTOList);
+        paginationDTO.setData(questionDTOList);
         return paginationDTO;
     }
 
+    //分页
     public PaginationDTO listByUserId(Long userId, Integer page,Integer size) {
         PaginationDTO paginationDTO = new PaginationDTO();
          Integer totalPage;
@@ -105,16 +106,15 @@ public class QuestionService {
         for (Question question : questions) {
             User user = userMapper.selectByPrimaryKey(question.getCreator());
             QuestionDTO questionDTO = new QuestionDTO();
-            //古老的方法questionDTO.setId(question.getId());
-            //新的方法  把question对象上的所有属性拷贝到questionDTO上面去
             BeanUtils.copyProperties(question,questionDTO);
             questionDTO.setUser(user);
             questionDTOList.add(questionDTO);
         }
-        paginationDTO.setQuestions(questionDTOList);
+        paginationDTO.setData(questionDTOList);
         return paginationDTO;
     }
 
+    //判断问题
     public QuestionDTO getById(Long id) {
         Question question = questionMapper.selectByPrimaryKey(id);
         if (question == null){
@@ -127,6 +127,7 @@ public class QuestionService {
         return questionDTO;
     }
 
+    //
     public void createOrUpdate(Question question) {
         if(question.getId() == null){
             //创建
@@ -154,20 +155,15 @@ public class QuestionService {
         }
     }
 
+    //阅读
     public void incView(Long id) {
-        /*Question question = questionMapper.selectByPrimaryKey(id);
-        Question updataQuestion = new Question();
-        updataQuestion.setViewCount(question.getViewCount()+1);
-        QuestionExample questionExample = new QuestionExample();
-        questionExample.createCriteria()
-                .andIdEqualTo(id);*/
         Question question = new Question();
         question.setId(id);
         question.setViewCount(1);
         questionExtMapper.incView(question);
-        /*questionMapper.updateByExampleSelective(updataQuestion,questionExample);*/
     }
 
+    //标签，将|取代,
     public List<QuestionDTO> selectRelated(QuestionDTO queryDTO) {
         if (StringUtils.isBlank(queryDTO.getTag())){
             return new ArrayList<>();
