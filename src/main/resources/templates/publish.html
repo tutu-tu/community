@@ -42,7 +42,10 @@
                             path : "/js/lib/",
                             delay : 0,
                             watch : false,
-                            placeholder : "请输入问题描述"
+                            placeholder : "请输入问题描述",
+                            imageUpload : true,
+                            imageFormats : ["jpg","jpeg","gif","png","bmp","webp"],
+                            imageUploadURL : "/file/upload"
                         });
                     });
                 </script>
@@ -66,8 +69,9 @@
                                     <span class="label label-info " th:each="selectTag : ${selectCategory.tags}">
                                         <span class="glyphicon glyphicon-tags"></span>
                                         <span class="label label-info" onclick="selectTag(this)"
-                                              th:data-tag="selectTag"
-                                              th:text="${selectTag}"></span>
+                                              th:data-tag="${selectTag}"
+                                              th:text="${selectTag}">
+                                        </span>
                                     </span>
                                 </div>
                             </div>
