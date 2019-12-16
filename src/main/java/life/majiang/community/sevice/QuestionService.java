@@ -3,6 +3,7 @@ package life.majiang.community.sevice;
 
 import life.majiang.community.entity.PaginationDTO;
 import life.majiang.community.entity.QuestionDTO;
+import life.majiang.community.entity.QuestionQueryDTO;
 import life.majiang.community.exception.CustomizeErrorCode;
 import life.majiang.community.exception.CustomizeException;
 import life.majiang.community.mapper.QuestionExtMapper;
@@ -32,11 +33,17 @@ public class QuestionService {
     @Autowired(required = false)
     private QuestionExtMapper questionExtMapper;
 
-    public PaginationDTO list(Integer page, Integer size) {
+    public PaginationDTO list(String search,Integer page, Integer size) {
+        if (StringUtils.isNotBlank(search)){
+            String[] titles = StringUtils.split(search," ");
+            search = Arrays.stream(titles).collect(Collectors.joining("|"));
+        }
         PaginationDTO paginationDTO = new PaginationDTO();
         Integer totalPage;
         //总数
-        Integer totalCount = (int)questionMapper.countByExample(new QuestionExample());
+        QuestionQueryDTO questionQueryDTO = new QuestionQueryDTO();
+        questionQueryDTO.setSearch(search);
+        Integer totalCount = questionExtMapper.countBySearch(questionQueryDTO);
 
         if(totalCount % size == 0){
             totalPage = totalCount/size;
@@ -57,7 +64,9 @@ public class QuestionService {
         }
         QuestionExample questionExample = new QuestionExample();
         questionExample.setOrderByClause("gmt_create desc");
-        List<Question> questions = questionMapper.selectByExampleWithRowbounds(questionExample,new RowBounds(offset,size));
+        questionQueryDTO.setSize(size);
+        questionQueryDTO.setPage(offset);
+        List<Question> questions = questionExtMapper.selectBySearch(questionQueryDTO);
         List<QuestionDTO> questionDTOList = new ArrayList<>();
 
         for (Question question : questions) {

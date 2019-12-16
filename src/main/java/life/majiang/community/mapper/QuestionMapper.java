@@ -1,6 +1,8 @@
 package life.majiang.community.mapper;
 
 import java.util.List;
+
+import life.majiang.community.entity.QuestionQueryDTO;
 import life.majiang.community.model.Question;
 import life.majiang.community.model.QuestionExample;
 import org.apache.ibatis.annotations.Param;
@@ -134,4 +136,5 @@ public interface QuestionMapper {
      * @mbg.generated Sat Dec 14 17:18:46 CST 2019
      */
     int updateByPrimaryKey(Question record);
+
 }
