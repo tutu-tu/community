@@ -1,0 +1,14 @@
+2019-12-21 12:48:33.528  INFO 14888 --- [restartedMain] l.m.community.CommunityApplication       : Starting CommunityApplication on DESKTOP-P1VCURD with PID 14888 (E:\Maven\community\target\classes started by user in E:\Maven\community)
+2019-12-21 12:48:33.544  INFO 14888 --- [restartedMain] l.m.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2019-12-21 12:48:33.653  INFO 14888 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-12-21 12:48:33.653  INFO 14888 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-12-21 12:48:36.126  INFO 14888 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2019-12-21 12:48:36.142  INFO 14888 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-21 12:48:36.142  INFO 14888 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-12-21 12:48:36.329  INFO 14888 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-21 12:48:36.329  INFO 14888 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2676 ms
+2019-12-21 12:48:37.497  INFO 14888 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-21 12:48:37.631  INFO 14888 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-12-21 12:48:38.029  INFO 14888 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-12-21 12:48:38.170  INFO 14888 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2019-12-21 12:48:38.170  INFO 14888 --- [restartedMain] l.m.community.CommunityApplication       : Started CommunityApplication in 5.739 seconds (JVM running for 7.642)
