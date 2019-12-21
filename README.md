@@ -9,5 +9,7 @@
 [bootstrap](https://v3.bootcss.com/components)
 ## 工具
 [git](https://git-scm.com/download)
+[springboot 定时器官方教程](https://spring.io/guides/gs/scheduling-tasks/)
 mn flyway:migrate
+[mybatisgenerater 需要改变表的时候，输入的命令]
 mvn -Dmybatis.generator.overwrite=true mybatis-generator:generate
