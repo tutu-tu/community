@@ -25,6 +25,7 @@ public class IndexController {
     @Autowired
     private HotTagCache hotTagCache;
 
+    //主页面
     @GetMapping("/")
     public String index(Model model,
                         @RequestParam(name = "search",required = false)String search,
@@ -32,19 +33,6 @@ public class IndexController {
                         @RequestParam(name = "size",defaultValue = "5")Integer size,
                         @RequestParam(name = "tag",required = false)String tag
                         ) {
-        /*Cookie[] cookies = request.getCookies();
-        if (cookies != null && cookies.length != 0)
-            for (Cookie cookie : cookies) {
-                if (cookie.getName().equals("token")) {
-                    //如果是前后端分离项目，可以在这里加一个验证信息，返回一个验证错误，登录一超时等等
-                    String token = cookie.getValue();
-                    User user = userMapper.findByToken(token);
-                    if (user != null) {
-                        request.getSession().setAttribute("user", user);
-                    }
-                    break;
-                }
-            }*/
 
         PaginationDTO pagination = questionService.list(search,page,size,tag);
         List<String> tags = hotTagCache.getHots();

@@ -51,6 +51,11 @@ body{
     margin: 5px 5px;
     display: inline-block;
 }
+.label-info-two{
+    white-space: normal;
+    margin: 5px 5px;
+    display: inline-block;
+}
 .community-menu{
     color: #999;
     font-size: 13px;

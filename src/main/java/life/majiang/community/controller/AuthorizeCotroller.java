@@ -34,8 +34,7 @@ public class AuthorizeCotroller {
     @Value("${github.client.id}")
     private String clientID;
 
-
-
+    //okhttp发起请求，待服务器响应后，回调callback接口
     @GetMapping("/callback")
     public String callback(@RequestParam(name = "code")String code,
                            @RequestParam(name = "state")String state,
@@ -46,9 +45,11 @@ public class AuthorizeCotroller {
         accessTokenDTD.setState(state);
         accessTokenDTD.setClient_secret(clientSecret);
         accessTokenDTD.setClient_id(clientID);
+        //得到Github令牌
         String accessToken = githubProvider.getAccessToken(accessTokenDTD);
+        //得到GitHub的用户信息
         GithubUser githubUser = githubProvider.getUser(accessToken);
-        System.out.println(githubUser.getName());
+        //System.out.println(githubUser.getName());
         if(githubUser != null && githubUser.getId() != null){
             User user = new User();
             user.setName(githubUser.getName());
@@ -64,19 +65,22 @@ public class AuthorizeCotroller {
             //request.getSession().setAttribute("githubUser",githubUser);
             return "redirect:/";
         }else{
+            //登录失败，重新登录
             log.error("callback get github error,{}",githubUser);
             System.out.println("登录失败");
-            //登录失败，重新登录
             return "redirect:/";
         }
 
     }
 
+    //退出，用户点击“退出登录”分发到这个接口，实现将cookie信息失效
     @GetMapping("loginout")
     public String loginOut(HttpServletRequest request,
                            HttpServletResponse response){
         request.getSession().removeAttribute("user");
+        //把token信息设置为null
         Cookie cookie = new Cookie("token",null);
+        //设置cookie立即失效
         cookie.setMaxAge(0);
         response.addCookie(cookie);
         return "redirect:/";

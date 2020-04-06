@@ -15,6 +15,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+/*自定义的错误页面*/
 @ControllerAdvice
 public class CustomizeExceptionHandler {
 
@@ -26,6 +27,7 @@ public class CustomizeExceptionHandler {
                         HttpServletResponse response){
 
         String contentType = request.getContentType();
+        //如果内容类型是json格式，返回json格式，否则就是浏览器的HTML格式
         if ("application/json".equals(contentType)){
             ResultDTO resultDTO;
             //返回json
