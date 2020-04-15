@@ -1,19 +1,879 @@
-2020-04-06 21:42:17.022  INFO 3976 --- [restartedMain] l.m.community.CommunityApplication       : Starting CommunityApplication on DESKTOP-P1VCURD with PID 3976 (E:\Maven\community\target\classes started by user in E:\Maven\community)
-2020-04-06 21:42:17.134  INFO 3976 --- [restartedMain] l.m.community.CommunityApplication       : No active profile set, falling back to default profiles: default
-2020-04-06 21:42:17.971  INFO 3976 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-04-06 21:42:17.973  INFO 3976 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-04-06 21:42:20.760  INFO 3976 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
-2020-04-06 21:42:20.772  INFO 3976 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-04-06 21:42:20.773  INFO 3976 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
-2020-04-06 21:42:20.901  INFO 3976 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-04-06 21:42:20.901  INFO 3976 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2925 ms
-2020-04-06 21:42:21.811  INFO 3976 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-04-06 21:42:21.896  INFO 3976 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2020-04-06 21:42:22.056  INFO 3976 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
-2020-04-06 21:42:22.263  INFO 3976 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-04-06 21:42:22.311  INFO 3976 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Mon Apr 06 21:42:22 CST 2020
-2020-04-06 21:42:22.360  INFO 3976 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
-2020-04-06 21:42:22.365  INFO 3976 --- [restartedMain] l.m.community.CommunityApplication       : Started CommunityApplication in 6.975 seconds (JVM running for 9.936)
-2020-04-06 21:42:22.388  INFO 3976 --- [scheduling-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2020-04-06 21:42:22.845  INFO 3976 --- [scheduling-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2020-04-06 21:42:22.942  INFO 3976 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Mon Apr 06 21:42:22 CST 2020
+2020-04-14 00:00:14.384  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:00:14 CST 2020
+2020-04-14 00:00:14.413  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:00:14 CST 2020
+2020-04-14 00:00:44.384  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:00:44 CST 2020
+2020-04-14 00:00:44.385  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:00:44 CST 2020
+2020-04-14 00:01:14.418  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:01:14 CST 2020
+2020-04-14 00:01:14.421  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:01:14 CST 2020
+2020-04-14 00:01:44.383  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:01:44 CST 2020
+2020-04-14 00:01:44.385  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:01:44 CST 2020
+2020-04-14 00:02:14.395  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:02:14 CST 2020
+2020-04-14 00:02:14.395  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:02:14 CST 2020
+2020-04-14 00:02:44.396  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:02:44 CST 2020
+2020-04-14 00:02:44.396  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:02:44 CST 2020
+2020-04-14 00:03:14.397  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:03:14 CST 2020
+2020-04-14 00:03:14.397  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:03:14 CST 2020
+2020-04-14 00:03:44.382  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:03:44 CST 2020
+2020-04-14 00:03:44.382  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:03:44 CST 2020
+2020-04-14 00:04:14.396  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:04:14 CST 2020
+2020-04-14 00:04:14.396  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:04:14 CST 2020
+2020-04-14 00:04:44.382  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:04:44 CST 2020
+2020-04-14 00:04:44.387  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:04:44 CST 2020
+2020-04-14 00:05:14.383  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:05:14 CST 2020
+2020-04-14 00:05:14.383  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:05:14 CST 2020
+2020-04-14 00:05:44.540  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:05:44 CST 2020
+2020-04-14 00:05:44.560  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:05:44 CST 2020
+2020-04-14 00:06:14.389  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:06:14 CST 2020
+2020-04-14 00:06:14.389  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:06:14 CST 2020
+2020-04-14 00:06:44.383  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:06:44 CST 2020
+2020-04-14 00:06:44.385  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:06:44 CST 2020
+2020-04-14 00:07:14.397  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:07:14 CST 2020
+2020-04-14 00:07:14.397  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:07:14 CST 2020
+2020-04-14 00:07:44.384  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:07:44 CST 2020
+2020-04-14 00:07:44.388  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:07:44 CST 2020
+2020-04-14 00:08:14.382  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:08:14 CST 2020
+2020-04-14 00:08:14.384  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:08:14 CST 2020
+2020-04-14 00:08:44.384  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:08:44 CST 2020
+2020-04-14 00:08:44.388  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:08:44 CST 2020
+2020-04-14 00:09:14.392  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:09:14 CST 2020
+2020-04-14 00:09:14.392  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:09:14 CST 2020
+2020-04-14 00:09:44.396  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:09:44 CST 2020
+2020-04-14 00:09:44.396  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:09:44 CST 2020
+2020-04-14 00:10:14.386  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:10:14 CST 2020
+2020-04-14 00:10:14.386  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:10:14 CST 2020
+2020-04-14 00:10:44.392  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:10:44 CST 2020
+2020-04-14 00:10:44.392  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:10:44 CST 2020
+2020-04-14 00:11:14.383  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:11:14 CST 2020
+2020-04-14 00:11:14.383  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:11:14 CST 2020
+2020-04-14 00:11:44.390  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:11:44 CST 2020
+2020-04-14 00:11:44.390  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:11:44 CST 2020
+2020-04-14 00:12:14.392  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:12:14 CST 2020
+2020-04-14 00:12:14.392  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:12:14 CST 2020
+2020-04-14 00:12:44.382  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:12:44 CST 2020
+2020-04-14 00:12:44.382  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:12:44 CST 2020
+2020-04-14 00:13:14.397  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:13:14 CST 2020
+2020-04-14 00:13:14.397  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:13:14 CST 2020
+2020-04-14 00:13:44.393  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:13:44 CST 2020
+2020-04-14 00:13:44.393  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:13:44 CST 2020
+2020-04-14 00:14:14.398  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:14:14 CST 2020
+2020-04-14 00:14:14.398  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:14:14 CST 2020
+2020-04-14 00:14:44.383  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:14:44 CST 2020
+2020-04-14 00:14:44.383  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:14:44 CST 2020
+2020-04-14 00:15:14.387  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:15:14 CST 2020
+2020-04-14 00:15:14.387  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:15:14 CST 2020
+2020-04-14 00:15:44.391  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:15:44 CST 2020
+2020-04-14 00:15:44.391  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:15:44 CST 2020
+2020-04-14 00:16:14.382  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:16:14 CST 2020
+2020-04-14 00:16:14.383  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:16:14 CST 2020
+2020-04-14 00:16:44.382  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:16:44 CST 2020
+2020-04-14 00:16:44.383  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:16:44 CST 2020
+2020-04-14 00:17:14.382  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:17:14 CST 2020
+2020-04-14 00:17:14.382  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:17:14 CST 2020
+2020-04-14 00:17:44.383  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:17:44 CST 2020
+2020-04-14 00:17:44.383  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:17:44 CST 2020
+2020-04-14 00:18:14.383  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:18:14 CST 2020
+2020-04-14 00:18:14.383  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:18:14 CST 2020
+2020-04-14 00:18:44.386  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:18:44 CST 2020
+2020-04-14 00:18:44.386  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:18:44 CST 2020
+2020-04-14 00:19:14.394  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:19:14 CST 2020
+2020-04-14 00:19:14.394  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:19:14 CST 2020
+2020-04-14 00:19:44.388  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:19:44 CST 2020
+2020-04-14 00:19:44.388  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:19:44 CST 2020
+2020-04-14 00:20:14.393  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:20:14 CST 2020
+2020-04-14 00:20:14.393  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:20:14 CST 2020
+2020-04-14 00:20:44.396  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:20:44 CST 2020
+2020-04-14 00:20:44.396  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:20:44 CST 2020
+2020-04-14 00:21:14.385  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:21:14 CST 2020
+2020-04-14 00:21:14.385  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:21:14 CST 2020
+2020-04-14 00:21:44.382  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:21:44 CST 2020
+2020-04-14 00:21:44.383  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:21:44 CST 2020
+2020-04-14 00:22:14.398  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:22:14 CST 2020
+2020-04-14 00:22:14.398  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:22:14 CST 2020
+2020-04-14 00:22:44.386  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:22:44 CST 2020
+2020-04-14 00:22:44.386  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:22:44 CST 2020
+2020-04-14 00:23:14.384  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:23:14 CST 2020
+2020-04-14 00:23:14.384  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:23:14 CST 2020
+2020-04-14 00:23:44.397  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:23:44 CST 2020
+2020-04-14 00:23:44.397  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:23:44 CST 2020
+2020-04-14 00:24:14.382  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:24:14 CST 2020
+2020-04-14 00:24:14.412  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:24:14 CST 2020
+2020-04-14 00:24:44.392  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:24:44 CST 2020
+2020-04-14 00:24:44.392  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:24:44 CST 2020
+2020-04-14 00:25:14.384  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:25:14 CST 2020
+2020-04-14 00:25:14.384  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:25:14 CST 2020
+2020-04-14 00:25:44.394  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:25:44 CST 2020
+2020-04-14 00:25:44.394  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:25:44 CST 2020
+2020-04-14 00:26:14.382  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:26:14 CST 2020
+2020-04-14 00:26:14.382  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:26:14 CST 2020
+2020-04-14 00:26:44.382  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:26:44 CST 2020
+2020-04-14 00:26:44.382  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:26:44 CST 2020
+2020-04-14 00:27:14.384  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:27:14 CST 2020
+2020-04-14 00:27:14.384  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:27:14 CST 2020
+2020-04-14 00:27:44.394  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:27:44 CST 2020
+2020-04-14 00:27:44.394  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:27:44 CST 2020
+2020-04-14 00:28:14.396  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:28:14 CST 2020
+2020-04-14 00:28:14.396  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:28:14 CST 2020
+2020-04-14 00:28:44.394  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:28:44 CST 2020
+2020-04-14 00:28:44.394  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:28:44 CST 2020
+2020-04-14 00:29:14.385  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:29:14 CST 2020
+2020-04-14 00:29:14.385  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:29:14 CST 2020
+2020-04-14 00:29:44.397  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:29:44 CST 2020
+2020-04-14 00:29:44.397  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:29:44 CST 2020
+2020-04-14 00:30:14.394  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:30:14 CST 2020
+2020-04-14 00:30:14.394  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:30:14 CST 2020
+2020-04-14 00:30:44.398  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:30:44 CST 2020
+2020-04-14 00:30:44.398  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:30:44 CST 2020
+2020-04-14 00:31:14.383  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:31:14 CST 2020
+2020-04-14 00:31:14.387  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:31:14 CST 2020
+2020-04-14 00:31:44.384  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:31:44 CST 2020
+2020-04-14 00:31:44.386  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:31:44 CST 2020
+2020-04-14 00:32:14.382  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:32:14 CST 2020
+2020-04-14 00:32:14.387  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:32:14 CST 2020
+2020-04-14 00:32:44.382  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:32:44 CST 2020
+2020-04-14 00:32:44.394  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:32:44 CST 2020
+2020-04-14 00:33:14.382  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:33:14 CST 2020
+2020-04-14 00:33:14.389  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:33:14 CST 2020
+2020-04-14 00:33:44.383  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:33:44 CST 2020
+2020-04-14 00:33:44.386  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:33:44 CST 2020
+2020-04-14 00:34:14.383  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:34:14 CST 2020
+2020-04-14 00:34:14.384  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:34:14 CST 2020
+2020-04-14 00:34:44.383  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:34:44 CST 2020
+2020-04-14 00:34:44.388  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:34:44 CST 2020
+2020-04-14 00:35:14.383  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:35:14 CST 2020
+2020-04-14 00:35:14.384  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:35:14 CST 2020
+2020-04-14 00:35:44.383  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:35:44 CST 2020
+2020-04-14 00:35:44.384  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:35:44 CST 2020
+2020-04-14 00:36:14.382  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:36:14 CST 2020
+2020-04-14 00:36:14.386  INFO 6892 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:36:14 CST 2020
+2020-04-14 00:36:47.802  INFO 14736 --- [restartedMain] l.m.community.CommunityApplication       : Starting CommunityApplication on DESKTOP-P1VCURD with PID 14736 (E:\Maven\community\target\classes started by user in E:\Maven\community)
+2020-04-14 00:36:47.807  INFO 14736 --- [restartedMain] l.m.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2020-04-14 00:36:47.945  INFO 14736 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-14 00:36:47.946  INFO 14736 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-04-14 00:36:51.165  INFO 14736 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2020-04-14 00:36:51.206  INFO 14736 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-14 00:36:51.206  INFO 14736 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2020-04-14 00:36:51.439  INFO 14736 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-14 00:36:51.440  INFO 14736 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3494 ms
+2020-04-14 00:36:52.522  INFO 14736 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-14 00:36:52.614  INFO 14736 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-04-14 00:36:52.775  INFO 14736 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-04-14 00:36:52.940  INFO 14736 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-04-14 00:36:52.973  INFO 14736 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:36:52 CST 2020
+2020-04-14 00:36:53.035  INFO 14736 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2020-04-14 00:36:53.047  INFO 14736 --- [restartedMain] l.m.community.CommunityApplication       : Started CommunityApplication in 5.903 seconds (JVM running for 7.624)
+2020-04-14 00:36:53.071  INFO 14736 --- [scheduling-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-04-14 00:36:53.341  INFO 14736 --- [scheduling-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-04-14 00:36:53.387  INFO 14736 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:36:53 CST 2020
+2020-04-14 00:36:58.566  INFO 14736 --- [http-nio-8888-exec-8] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-14 00:36:58.567  INFO 14736 --- [http-nio-8888-exec-8] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-14 00:36:58.577  INFO 14736 --- [http-nio-8888-exec-8] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2020-04-14 00:37:22.974  INFO 14736 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:37:22 CST 2020
+2020-04-14 00:37:22.980  INFO 14736 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:37:22 CST 2020
+2020-04-14 00:37:52.973  INFO 14736 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:37:52 CST 2020
+2020-04-14 00:37:52.979  INFO 14736 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:37:52 CST 2020
+2020-04-14 00:38:22.974  INFO 14736 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:38:22 CST 2020
+2020-04-14 00:38:22.976  INFO 14736 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:38:22 CST 2020
+2020-04-14 00:38:52.974  INFO 14736 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:38:52 CST 2020
+2020-04-14 00:38:52.976  INFO 14736 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:38:52 CST 2020
+2020-04-14 00:39:22.973  INFO 14736 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:39:22 CST 2020
+2020-04-14 00:39:22.978  INFO 14736 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:39:22 CST 2020
+2020-04-14 00:39:52.975  INFO 14736 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:39:52 CST 2020
+2020-04-14 00:39:52.982  INFO 14736 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:39:52 CST 2020
+2020-04-14 00:40:22.973  INFO 14736 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:40:22 CST 2020
+2020-04-14 00:40:22.975  INFO 14736 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:40:22 CST 2020
+2020-04-14 00:40:52.973  INFO 14736 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:40:52 CST 2020
+2020-04-14 00:40:52.977  INFO 14736 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:40:52 CST 2020
+2020-04-14 00:41:22.975  INFO 14736 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:41:22 CST 2020
+2020-04-14 00:41:22.976  INFO 14736 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:41:22 CST 2020
+2020-04-14 00:41:52.974  INFO 14736 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:41:52 CST 2020
+2020-04-14 00:41:52.975  INFO 14736 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:41:52 CST 2020
+2020-04-14 00:42:22.973  INFO 14736 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:42:22 CST 2020
+2020-04-14 00:42:22.974  INFO 14736 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:42:22 CST 2020
+2020-04-14 00:42:33.153  INFO 5076 --- [restartedMain] l.m.community.CommunityApplication       : Starting CommunityApplication on DESKTOP-P1VCURD with PID 5076 (E:\Maven\community\target\classes started by user in E:\Maven\community)
+2020-04-14 00:42:33.157  INFO 5076 --- [restartedMain] l.m.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2020-04-14 00:42:33.311  INFO 5076 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-14 00:42:33.312  INFO 5076 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-04-14 00:42:35.590  INFO 5076 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2020-04-14 00:42:35.617  INFO 5076 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-14 00:42:35.617  INFO 5076 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2020-04-14 00:42:35.832  INFO 5076 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-14 00:42:35.833  INFO 5076 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2521 ms
+2020-04-14 00:42:36.577  INFO 5076 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-14 00:42:36.651  INFO 5076 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-04-14 00:42:36.758  INFO 5076 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-04-14 00:42:36.880  INFO 5076 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-04-14 00:42:36.907  INFO 5076 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:42:36 CST 2020
+2020-04-14 00:42:36.944  INFO 5076 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2020-04-14 00:42:36.949  INFO 5076 --- [restartedMain] l.m.community.CommunityApplication       : Started CommunityApplication in 4.496 seconds (JVM running for 6.002)
+2020-04-14 00:42:36.960  INFO 5076 --- [scheduling-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-04-14 00:42:37.174  INFO 5076 --- [scheduling-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-04-14 00:42:37.206  INFO 5076 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:42:37 CST 2020
+2020-04-14 00:43:06.906  INFO 5076 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:43:06 CST 2020
+2020-04-14 00:43:06.921  INFO 5076 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:43:06 CST 2020
+2020-04-14 00:43:36.907  INFO 5076 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:43:36 CST 2020
+2020-04-14 00:43:36.911  INFO 5076 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:43:36 CST 2020
+2020-04-14 00:44:06.906  INFO 5076 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:44:06 CST 2020
+2020-04-14 00:44:06.912  INFO 5076 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:44:06 CST 2020
+2020-04-14 00:44:36.908  INFO 5076 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:44:36 CST 2020
+2020-04-14 00:44:36.919  INFO 5076 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:44:36 CST 2020
+2020-04-14 00:45:06.907  INFO 5076 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:45:06 CST 2020
+2020-04-14 00:45:06.916  INFO 5076 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:45:06 CST 2020
+2020-04-14 00:45:14.916  INFO 5076 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-14 00:45:14.916  INFO 5076 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-14 00:45:14.928  INFO 5076 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2020-04-14 00:45:36.908  INFO 5076 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:45:36 CST 2020
+2020-04-14 00:45:36.910  INFO 5076 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:45:36 CST 2020
+2020-04-14 00:46:06.906  INFO 5076 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:46:06 CST 2020
+2020-04-14 00:46:06.909  INFO 5076 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:46:06 CST 2020
+2020-04-14 00:46:36.908  INFO 5076 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:46:36 CST 2020
+2020-04-14 00:46:36.910  INFO 5076 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:46:36 CST 2020
+2020-04-14 00:47:06.907  INFO 5076 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:47:06 CST 2020
+2020-04-14 00:47:06.911  INFO 5076 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:47:06 CST 2020
+2020-04-14 00:47:36.907  INFO 5076 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:47:36 CST 2020
+2020-04-14 00:47:36.914  INFO 5076 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:47:36 CST 2020
+2020-04-14 00:48:06.907  INFO 5076 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:48:06 CST 2020
+2020-04-14 00:48:06.909  INFO 5076 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:48:06 CST 2020
+2020-04-14 00:48:36.906  INFO 5076 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:48:36 CST 2020
+2020-04-14 00:48:36.912  INFO 5076 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:48:36 CST 2020
+2020-04-14 00:49:06.906  INFO 5076 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:49:06 CST 2020
+2020-04-14 00:49:06.913  INFO 5076 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:49:06 CST 2020
+2020-04-14 00:49:36.907  INFO 5076 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:49:36 CST 2020
+2020-04-14 00:49:36.908  INFO 5076 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:49:36 CST 2020
+2020-04-14 00:50:04.496  INFO 10928 --- [restartedMain] l.m.community.CommunityApplication       : Starting CommunityApplication on DESKTOP-P1VCURD with PID 10928 (E:\Maven\community\target\classes started by user in E:\Maven\community)
+2020-04-14 00:50:04.501  INFO 10928 --- [restartedMain] l.m.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2020-04-14 00:50:04.620  INFO 10928 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-14 00:50:04.621  INFO 10928 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-04-14 00:50:06.691  INFO 10928 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2020-04-14 00:50:06.702  INFO 10928 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-14 00:50:06.702  INFO 10928 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2020-04-14 00:50:06.816  INFO 10928 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-14 00:50:06.816  INFO 10928 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2195 ms
+2020-04-14 00:50:07.601  INFO 10928 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-14 00:50:07.679  INFO 10928 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-04-14 00:50:07.787  INFO 10928 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-04-14 00:50:07.902  INFO 10928 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-04-14 00:50:07.924  INFO 10928 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:50:07 CST 2020
+2020-04-14 00:50:07.958  INFO 10928 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2020-04-14 00:50:07.962  INFO 10928 --- [restartedMain] l.m.community.CommunityApplication       : Started CommunityApplication in 4.145 seconds (JVM running for 5.666)
+2020-04-14 00:50:07.972  INFO 10928 --- [scheduling-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-04-14 00:50:08.206  INFO 10928 --- [scheduling-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-04-14 00:50:08.237  INFO 10928 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:50:08 CST 2020
+2020-04-14 00:50:20.348  INFO 10928 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-14 00:50:20.349  INFO 10928 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-14 00:50:20.361  INFO 10928 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2020-04-14 00:50:37.926  INFO 10928 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:50:37 CST 2020
+2020-04-14 00:50:37.930  INFO 10928 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:50:37 CST 2020
+2020-04-14 00:51:07.926  INFO 10928 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:51:07 CST 2020
+2020-04-14 00:51:07.930  INFO 10928 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:51:07 CST 2020
+2020-04-14 00:51:18.878 ERROR 10928 --- [http-nio-8888-exec-3] l.m.c.controller.AuthorizeCotroller      : callback get github error,null
+2020-04-14 00:51:37.926  INFO 10928 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:51:37 CST 2020
+2020-04-14 00:51:37.928  INFO 10928 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:51:37 CST 2020
+2020-04-14 00:52:07.926  INFO 10928 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:52:07 CST 2020
+2020-04-14 00:52:07.928  INFO 10928 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:52:07 CST 2020
+2020-04-14 00:52:37.931  INFO 10928 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:52:37 CST 2020
+2020-04-14 00:52:37.931  INFO 10928 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:52:37 CST 2020
+2020-04-14 00:53:07.924  INFO 10928 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:53:07 CST 2020
+2020-04-14 00:53:07.926  INFO 10928 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:53:07 CST 2020
+2020-04-14 00:53:37.924  INFO 10928 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:53:37 CST 2020
+2020-04-14 00:53:37.930  INFO 10928 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:53:37 CST 2020
+2020-04-14 00:54:07.925  INFO 10928 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:54:07 CST 2020
+2020-04-14 00:54:07.926  INFO 10928 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:54:07 CST 2020
+2020-04-14 00:54:37.929  INFO 10928 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:54:37 CST 2020
+2020-04-14 00:54:37.929  INFO 10928 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:54:37 CST 2020
+2020-04-14 00:55:07.925  INFO 10928 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:55:07 CST 2020
+2020-04-14 00:55:07.930  INFO 10928 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:55:07 CST 2020
+2020-04-14 00:55:37.924  INFO 10928 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:55:37 CST 2020
+2020-04-14 00:55:37.928  INFO 10928 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:55:37 CST 2020
+2020-04-14 00:56:07.925  INFO 10928 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:56:07 CST 2020
+2020-04-14 00:56:07.930  INFO 10928 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:56:07 CST 2020
+2020-04-14 00:56:37.924  INFO 10928 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:56:37 CST 2020
+2020-04-14 00:56:37.925  INFO 10928 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:56:37 CST 2020
+2020-04-14 00:57:07.926  INFO 10928 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:57:07 CST 2020
+2020-04-14 00:57:07.927  INFO 10928 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:57:07 CST 2020
+2020-04-14 00:57:37.926  INFO 10928 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 00:57:37 CST 2020
+2020-04-14 00:57:37.933  INFO 10928 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 00:57:37 CST 2020
+2020-04-14 14:01:41.503  INFO 13656 --- [restartedMain] l.m.community.CommunityApplication       : Starting CommunityApplication on DESKTOP-P1VCURD with PID 13656 (E:\Maven\community\target\classes started by user in E:\Maven\community)
+2020-04-14 14:01:41.503  INFO 13656 --- [restartedMain] l.m.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2020-04-14 14:01:41.628  INFO 13656 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-14 14:01:41.628  INFO 13656 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-04-14 14:01:46.046  INFO 13656 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2020-04-14 14:01:46.063  INFO 13656 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-14 14:01:46.064  INFO 13656 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2020-04-14 14:01:46.213  INFO 13656 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-14 14:01:46.213  INFO 13656 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4585 ms
+2020-04-14 14:01:47.907  INFO 13656 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-14 14:01:48.047  INFO 13656 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-04-14 14:01:48.266  INFO 13656 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-04-14 14:01:48.532  INFO 13656 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-04-14 14:01:48.563  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:01:48 CST 2020
+2020-04-14 14:01:48.610  INFO 13656 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2020-04-14 14:01:48.610  INFO 13656 --- [restartedMain] l.m.community.CommunityApplication       : Started CommunityApplication in 8.025 seconds (JVM running for 11.371)
+2020-04-14 14:01:48.625  INFO 13656 --- [scheduling-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-04-14 14:01:49.172  INFO 13656 --- [scheduling-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-04-14 14:01:49.391  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:01:49 CST 2020
+2020-04-14 14:01:57.514  INFO 13656 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-14 14:01:57.514  INFO 13656 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-14 14:01:57.529  INFO 13656 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2020-04-14 14:02:18.578  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:02:18 CST 2020
+2020-04-14 14:02:18.578  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:02:18 CST 2020
+2020-04-14 14:02:48.577  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:02:48 CST 2020
+2020-04-14 14:02:48.577  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:02:48 CST 2020
+2020-04-14 14:03:18.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:03:18 CST 2020
+2020-04-14 14:03:18.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:03:18 CST 2020
+2020-04-14 14:03:48.577  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:03:48 CST 2020
+2020-04-14 14:03:48.577  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:03:48 CST 2020
+2020-04-14 14:04:18.578  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:04:18 CST 2020
+2020-04-14 14:04:18.578  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:04:18 CST 2020
+2020-04-14 14:04:48.577  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:04:48 CST 2020
+2020-04-14 14:04:48.577  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:04:48 CST 2020
+2020-04-14 14:05:18.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:05:18 CST 2020
+2020-04-14 14:05:18.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:05:18 CST 2020
+2020-04-14 14:05:48.576  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:05:48 CST 2020
+2020-04-14 14:05:48.576  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:05:48 CST 2020
+2020-04-14 14:06:18.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:06:18 CST 2020
+2020-04-14 14:06:18.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:06:18 CST 2020
+2020-04-14 14:06:48.572  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:06:48 CST 2020
+2020-04-14 14:06:48.572  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:06:48 CST 2020
+2020-04-14 14:07:18.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:07:18 CST 2020
+2020-04-14 14:07:18.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:07:18 CST 2020
+2020-04-14 14:07:48.576  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:07:48 CST 2020
+2020-04-14 14:07:48.576  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:07:48 CST 2020
+2020-04-14 14:08:18.572  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:08:18 CST 2020
+2020-04-14 14:08:18.572  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:08:18 CST 2020
+2020-04-14 14:08:48.581  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:08:48 CST 2020
+2020-04-14 14:08:48.581  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:08:48 CST 2020
+2020-04-14 14:09:18.600  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:09:18 CST 2020
+2020-04-14 14:09:18.600  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:09:18 CST 2020
+2020-04-14 14:09:48.580  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:09:48 CST 2020
+2020-04-14 14:09:48.580  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:09:48 CST 2020
+2020-04-14 14:10:18.578  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:10:18 CST 2020
+2020-04-14 14:10:18.578  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:10:18 CST 2020
+2020-04-14 14:10:48.570  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:10:48 CST 2020
+2020-04-14 14:10:48.570  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:10:48 CST 2020
+2020-04-14 14:11:18.576  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:11:18 CST 2020
+2020-04-14 14:11:18.576  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:11:18 CST 2020
+2020-04-14 14:11:48.569  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:11:48 CST 2020
+2020-04-14 14:11:48.569  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:11:48 CST 2020
+2020-04-14 14:12:18.581  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:12:18 CST 2020
+2020-04-14 14:12:18.581  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:12:18 CST 2020
+2020-04-14 14:12:48.580  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:12:48 CST 2020
+2020-04-14 14:12:48.580  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:12:48 CST 2020
+2020-04-14 14:13:18.581  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:13:18 CST 2020
+2020-04-14 14:13:18.581  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:13:18 CST 2020
+2020-04-14 14:13:48.569  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:13:48 CST 2020
+2020-04-14 14:13:48.569  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:13:48 CST 2020
+2020-04-14 14:14:18.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:14:18 CST 2020
+2020-04-14 14:14:18.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:14:18 CST 2020
+2020-04-14 14:14:48.578  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:14:48 CST 2020
+2020-04-14 14:14:48.578  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:14:48 CST 2020
+2020-04-14 14:15:18.577  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:15:18 CST 2020
+2020-04-14 14:15:18.577  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:15:18 CST 2020
+2020-04-14 14:15:48.575  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:15:48 CST 2020
+2020-04-14 14:15:48.575  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:15:48 CST 2020
+2020-04-14 14:16:18.575  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:16:18 CST 2020
+2020-04-14 14:16:18.575  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:16:18 CST 2020
+2020-04-14 14:16:48.575  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:16:48 CST 2020
+2020-04-14 14:16:48.575  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:16:48 CST 2020
+2020-04-14 14:17:18.569  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:17:18 CST 2020
+2020-04-14 14:17:18.569  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:17:18 CST 2020
+2020-04-14 14:17:48.578  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:17:48 CST 2020
+2020-04-14 14:17:48.578  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:17:48 CST 2020
+2020-04-14 14:18:18.574  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:18:18 CST 2020
+2020-04-14 14:18:18.574  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:18:18 CST 2020
+2020-04-14 14:18:48.573  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:18:48 CST 2020
+2020-04-14 14:18:48.573  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:18:48 CST 2020
+2020-04-14 14:19:18.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:19:18 CST 2020
+2020-04-14 14:19:18.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:19:18 CST 2020
+2020-04-14 14:19:48.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:19:48 CST 2020
+2020-04-14 14:19:48.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:19:48 CST 2020
+2020-04-14 14:20:18.573  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:20:18 CST 2020
+2020-04-14 14:20:18.573  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:20:18 CST 2020
+2020-04-14 14:20:48.576  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:20:48 CST 2020
+2020-04-14 14:20:48.576  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:20:48 CST 2020
+2020-04-14 14:21:18.574  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:21:18 CST 2020
+2020-04-14 14:21:18.574  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:21:18 CST 2020
+2020-04-14 14:21:48.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:21:48 CST 2020
+2020-04-14 14:21:48.574  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:21:48 CST 2020
+2020-04-14 14:22:18.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:22:18 CST 2020
+2020-04-14 14:22:18.571  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:22:18 CST 2020
+2020-04-14 14:22:48.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:22:48 CST 2020
+2020-04-14 14:22:48.570  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:22:48 CST 2020
+2020-04-14 14:23:18.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:23:18 CST 2020
+2020-04-14 14:23:18.570  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:23:18 CST 2020
+2020-04-14 14:23:48.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:23:48 CST 2020
+2020-04-14 14:23:48.573  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:23:48 CST 2020
+2020-04-14 14:24:18.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:24:18 CST 2020
+2020-04-14 14:24:18.571  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:24:18 CST 2020
+2020-04-14 14:24:48.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:24:48 CST 2020
+2020-04-14 14:24:48.569  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:24:48 CST 2020
+2020-04-14 14:25:18.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:25:18 CST 2020
+2020-04-14 14:25:18.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:25:18 CST 2020
+2020-04-14 14:25:48.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:25:48 CST 2020
+2020-04-14 14:25:48.603  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:25:48 CST 2020
+2020-04-14 14:26:18.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:26:18 CST 2020
+2020-04-14 14:26:18.571  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:26:18 CST 2020
+2020-04-14 14:26:48.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:26:48 CST 2020
+2020-04-14 14:26:48.570  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:26:48 CST 2020
+2020-04-14 14:27:18.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:27:18 CST 2020
+2020-04-14 14:27:18.569  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:27:18 CST 2020
+2020-04-14 14:27:48.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:27:48 CST 2020
+2020-04-14 14:27:48.570  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:27:48 CST 2020
+2020-04-14 14:28:18.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:28:18 CST 2020
+2020-04-14 14:28:18.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:28:18 CST 2020
+2020-04-14 14:28:48.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:28:48 CST 2020
+2020-04-14 14:28:48.569  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:28:48 CST 2020
+2020-04-14 14:29:18.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:29:18 CST 2020
+2020-04-14 14:29:18.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:29:18 CST 2020
+2020-04-14 14:29:48.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:29:48 CST 2020
+2020-04-14 14:29:48.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:29:48 CST 2020
+2020-04-14 14:30:18.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:30:18 CST 2020
+2020-04-14 14:30:18.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:30:18 CST 2020
+2020-04-14 14:30:48.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:30:48 CST 2020
+2020-04-14 14:30:48.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:30:48 CST 2020
+2020-04-14 14:31:18.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:31:18 CST 2020
+2020-04-14 14:31:18.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:31:18 CST 2020
+2020-04-14 14:31:48.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:31:48 CST 2020
+2020-04-14 14:31:48.569  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:31:48 CST 2020
+2020-04-14 14:32:18.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:32:18 CST 2020
+2020-04-14 14:32:18.570  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:32:18 CST 2020
+2020-04-14 14:32:48.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:32:48 CST 2020
+2020-04-14 14:32:48.570  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:32:48 CST 2020
+2020-04-14 14:33:18.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:33:18 CST 2020
+2020-04-14 14:33:18.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:33:18 CST 2020
+2020-04-14 14:33:48.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:33:48 CST 2020
+2020-04-14 14:33:48.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:33:48 CST 2020
+2020-04-14 14:34:18.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:34:18 CST 2020
+2020-04-14 14:34:18.569  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:34:18 CST 2020
+2020-04-14 14:34:48.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:34:48 CST 2020
+2020-04-14 14:34:48.570  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:34:48 CST 2020
+2020-04-14 14:35:18.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:35:18 CST 2020
+2020-04-14 14:35:18.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:35:18 CST 2020
+2020-04-14 14:35:48.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:35:48 CST 2020
+2020-04-14 14:35:48.569  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:35:48 CST 2020
+2020-04-14 14:36:18.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:36:18 CST 2020
+2020-04-14 14:36:18.569  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:36:18 CST 2020
+2020-04-14 14:36:48.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:36:48 CST 2020
+2020-04-14 14:36:48.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:36:48 CST 2020
+2020-04-14 14:37:18.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:37:18 CST 2020
+2020-04-14 14:37:18.571  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:37:18 CST 2020
+2020-04-14 14:37:48.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:37:48 CST 2020
+2020-04-14 14:37:48.594  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:37:48 CST 2020
+2020-04-14 14:38:18.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:38:18 CST 2020
+2020-04-14 14:38:18.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:38:18 CST 2020
+2020-04-14 14:38:48.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:38:48 CST 2020
+2020-04-14 14:38:48.569  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:38:48 CST 2020
+2020-04-14 14:39:18.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:39:18 CST 2020
+2020-04-14 14:39:18.572  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:39:18 CST 2020
+2020-04-14 14:39:48.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:39:48 CST 2020
+2020-04-14 14:39:48.572  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:39:48 CST 2020
+2020-04-14 14:40:18.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:40:18 CST 2020
+2020-04-14 14:40:18.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:40:18 CST 2020
+2020-04-14 14:40:48.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:40:48 CST 2020
+2020-04-14 14:40:48.570  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:40:48 CST 2020
+2020-04-14 14:41:18.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:41:18 CST 2020
+2020-04-14 14:41:18.569  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:41:18 CST 2020
+2020-04-14 14:41:48.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:41:48 CST 2020
+2020-04-14 14:41:48.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:41:48 CST 2020
+2020-04-14 14:42:18.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:42:18 CST 2020
+2020-04-14 14:42:18.571  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:42:18 CST 2020
+2020-04-14 14:42:48.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:42:48 CST 2020
+2020-04-14 14:42:48.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:42:48 CST 2020
+2020-04-14 14:43:18.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:43:18 CST 2020
+2020-04-14 14:43:18.570  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:43:18 CST 2020
+2020-04-14 14:43:48.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:43:48 CST 2020
+2020-04-14 14:43:48.570  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:43:48 CST 2020
+2020-04-14 14:44:18.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:44:18 CST 2020
+2020-04-14 14:44:18.570  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:44:18 CST 2020
+2020-04-14 14:44:48.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:44:48 CST 2020
+2020-04-14 14:44:48.579  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:44:48 CST 2020
+2020-04-14 14:45:18.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:45:18 CST 2020
+2020-04-14 14:45:18.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:45:18 CST 2020
+2020-04-14 14:45:48.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:45:48 CST 2020
+2020-04-14 14:45:48.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:45:48 CST 2020
+2020-04-14 14:46:18.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:46:18 CST 2020
+2020-04-14 14:46:18.570  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:46:18 CST 2020
+2020-04-14 14:46:48.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:46:48 CST 2020
+2020-04-14 14:46:48.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:46:48 CST 2020
+2020-04-14 14:47:18.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:47:18 CST 2020
+2020-04-14 14:47:18.570  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:47:18 CST 2020
+2020-04-14 14:47:48.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:47:48 CST 2020
+2020-04-14 14:47:48.572  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:47:48 CST 2020
+2020-04-14 14:48:18.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:48:18 CST 2020
+2020-04-14 14:48:18.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:48:18 CST 2020
+2020-04-14 14:48:48.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:48:48 CST 2020
+2020-04-14 14:48:48.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:48:48 CST 2020
+2020-04-14 14:49:18.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:49:18 CST 2020
+2020-04-14 14:49:18.570  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:49:18 CST 2020
+2020-04-14 14:49:48.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:49:48 CST 2020
+2020-04-14 14:49:48.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:49:48 CST 2020
+2020-04-14 14:50:18.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:50:18 CST 2020
+2020-04-14 14:50:18.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:50:18 CST 2020
+2020-04-14 14:50:48.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:50:48 CST 2020
+2020-04-14 14:50:48.572  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:50:48 CST 2020
+2020-04-14 14:51:18.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:51:18 CST 2020
+2020-04-14 14:51:18.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:51:18 CST 2020
+2020-04-14 14:51:48.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:51:48 CST 2020
+2020-04-14 14:51:48.570  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:51:48 CST 2020
+2020-04-14 14:52:18.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:52:18 CST 2020
+2020-04-14 14:52:18.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:52:18 CST 2020
+2020-04-14 14:52:48.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:52:48 CST 2020
+2020-04-14 14:52:48.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:52:48 CST 2020
+2020-04-14 14:53:18.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:53:18 CST 2020
+2020-04-14 14:53:18.570  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:53:18 CST 2020
+2020-04-14 14:53:48.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:53:48 CST 2020
+2020-04-14 14:53:48.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:53:48 CST 2020
+2020-04-14 14:54:18.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:54:18 CST 2020
+2020-04-14 14:54:18.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:54:18 CST 2020
+2020-04-14 14:54:48.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:54:48 CST 2020
+2020-04-14 14:54:48.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:54:48 CST 2020
+2020-04-14 14:55:18.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:55:18 CST 2020
+2020-04-14 14:55:18.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:55:18 CST 2020
+2020-04-14 14:55:48.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:55:48 CST 2020
+2020-04-14 14:55:48.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:55:48 CST 2020
+2020-04-14 14:56:18.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:56:18 CST 2020
+2020-04-14 14:56:18.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:56:18 CST 2020
+2020-04-14 14:56:48.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:56:48 CST 2020
+2020-04-14 14:56:48.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:56:48 CST 2020
+2020-04-14 14:57:18.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:57:18 CST 2020
+2020-04-14 14:57:18.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:57:18 CST 2020
+2020-04-14 14:57:48.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:57:48 CST 2020
+2020-04-14 14:57:48.570  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:57:48 CST 2020
+2020-04-14 14:58:18.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:58:18 CST 2020
+2020-04-14 14:58:18.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:58:18 CST 2020
+2020-04-14 14:58:48.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:58:48 CST 2020
+2020-04-14 14:58:48.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:58:48 CST 2020
+2020-04-14 14:59:18.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:59:18 CST 2020
+2020-04-14 14:59:18.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:59:18 CST 2020
+2020-04-14 14:59:48.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 14:59:48 CST 2020
+2020-04-14 14:59:48.570  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 14:59:48 CST 2020
+2020-04-14 15:00:18.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:00:18 CST 2020
+2020-04-14 15:00:18.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:00:18 CST 2020
+2020-04-14 15:00:48.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:00:48 CST 2020
+2020-04-14 15:00:48.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:00:48 CST 2020
+2020-04-14 15:01:18.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:01:18 CST 2020
+2020-04-14 15:01:18.569  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:01:18 CST 2020
+2020-04-14 15:01:48.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:01:48 CST 2020
+2020-04-14 15:01:48.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:01:48 CST 2020
+2020-04-14 15:02:18.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:02:18 CST 2020
+2020-04-14 15:02:18.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:02:18 CST 2020
+2020-04-14 15:02:48.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:02:48 CST 2020
+2020-04-14 15:02:48.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:02:48 CST 2020
+2020-04-14 15:03:18.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:03:18 CST 2020
+2020-04-14 15:03:18.570  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:03:18 CST 2020
+2020-04-14 15:03:48.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:03:48 CST 2020
+2020-04-14 15:03:48.570  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:03:48 CST 2020
+2020-04-14 15:04:18.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:04:18 CST 2020
+2020-04-14 15:04:18.570  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:04:18 CST 2020
+2020-04-14 15:04:48.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:04:48 CST 2020
+2020-04-14 15:04:48.570  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:04:48 CST 2020
+2020-04-14 15:05:18.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:05:18 CST 2020
+2020-04-14 15:05:18.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:05:18 CST 2020
+2020-04-14 15:05:48.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:05:48 CST 2020
+2020-04-14 15:05:48.571  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:05:48 CST 2020
+2020-04-14 15:06:18.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:06:18 CST 2020
+2020-04-14 15:06:18.571  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:06:18 CST 2020
+2020-04-14 15:06:48.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:06:48 CST 2020
+2020-04-14 15:06:48.570  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:06:48 CST 2020
+2020-04-14 15:07:18.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:07:18 CST 2020
+2020-04-14 15:07:18.571  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:07:18 CST 2020
+2020-04-14 15:07:48.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:07:48 CST 2020
+2020-04-14 15:07:48.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:07:48 CST 2020
+2020-04-14 15:08:18.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:08:18 CST 2020
+2020-04-14 15:08:18.570  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:08:18 CST 2020
+2020-04-14 15:08:48.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:08:48 CST 2020
+2020-04-14 15:08:48.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:08:48 CST 2020
+2020-04-14 15:09:18.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:09:18 CST 2020
+2020-04-14 15:09:18.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:09:18 CST 2020
+2020-04-14 15:09:48.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:09:48 CST 2020
+2020-04-14 15:09:48.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:09:48 CST 2020
+2020-04-14 15:10:18.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:10:18 CST 2020
+2020-04-14 15:10:18.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:10:18 CST 2020
+2020-04-14 15:10:48.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:10:48 CST 2020
+2020-04-14 15:10:48.569  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:10:48 CST 2020
+2020-04-14 15:11:18.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:11:18 CST 2020
+2020-04-14 15:11:18.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:11:18 CST 2020
+2020-04-14 15:11:48.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:11:48 CST 2020
+2020-04-14 15:11:48.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:11:48 CST 2020
+2020-04-14 15:12:18.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:12:18 CST 2020
+2020-04-14 15:12:18.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:12:18 CST 2020
+2020-04-14 15:12:48.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:12:48 CST 2020
+2020-04-14 15:12:48.570  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:12:48 CST 2020
+2020-04-14 15:13:18.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:13:18 CST 2020
+2020-04-14 15:13:18.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:13:18 CST 2020
+2020-04-14 15:13:48.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:13:48 CST 2020
+2020-04-14 15:13:48.571  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:13:48 CST 2020
+2020-04-14 15:14:18.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:14:18 CST 2020
+2020-04-14 15:14:18.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:14:18 CST 2020
+2020-04-14 15:14:48.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:14:48 CST 2020
+2020-04-14 15:14:48.569  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:14:48 CST 2020
+2020-04-14 15:15:18.575  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:15:18 CST 2020
+2020-04-14 15:15:18.575  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:15:18 CST 2020
+2020-04-14 15:15:48.575  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:15:48 CST 2020
+2020-04-14 15:15:48.575  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:15:48 CST 2020
+2020-04-14 15:16:18.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:16:18 CST 2020
+2020-04-14 15:16:18.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:16:18 CST 2020
+2020-04-14 15:16:48.578  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:16:48 CST 2020
+2020-04-14 15:16:48.578  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:16:48 CST 2020
+2020-04-14 15:17:18.570  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:17:18 CST 2020
+2020-04-14 15:17:18.570  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:17:18 CST 2020
+2020-04-14 15:17:48.576  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:17:48 CST 2020
+2020-04-14 15:17:48.581  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:17:48 CST 2020
+2020-04-14 15:18:18.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:18:18 CST 2020
+2020-04-14 15:18:18.571  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:18:18 CST 2020
+2020-04-14 15:18:48.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:18:48 CST 2020
+2020-04-14 15:18:48.570  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:18:48 CST 2020
+2020-04-14 15:19:18.569  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:19:18 CST 2020
+2020-04-14 15:19:18.569  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:19:18 CST 2020
+2020-04-14 15:19:48.572  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:19:48 CST 2020
+2020-04-14 15:19:48.572  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:19:48 CST 2020
+2020-04-14 15:20:18.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:20:18 CST 2020
+2020-04-14 15:20:18.569  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:20:18 CST 2020
+2020-04-14 15:20:48.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:20:48 CST 2020
+2020-04-14 15:20:48.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:20:48 CST 2020
+2020-04-14 15:21:18.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:21:18 CST 2020
+2020-04-14 15:21:18.570  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:21:18 CST 2020
+2020-04-14 15:21:48.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:21:48 CST 2020
+2020-04-14 15:21:48.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:21:48 CST 2020
+2020-04-14 15:22:18.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:22:18 CST 2020
+2020-04-14 15:22:18.574  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:22:18 CST 2020
+2020-04-14 15:22:48.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:22:48 CST 2020
+2020-04-14 15:22:48.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:22:48 CST 2020
+2020-04-14 15:23:18.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:23:18 CST 2020
+2020-04-14 15:23:18.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:23:18 CST 2020
+2020-04-14 15:23:48.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:23:48 CST 2020
+2020-04-14 15:23:48.574  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:23:48 CST 2020
+2020-04-14 15:24:18.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:24:18 CST 2020
+2020-04-14 15:24:18.569  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:24:18 CST 2020
+2020-04-14 15:24:48.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:24:48 CST 2020
+2020-04-14 15:24:48.569  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:24:48 CST 2020
+2020-04-14 15:25:18.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:25:18 CST 2020
+2020-04-14 15:25:18.569  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:25:18 CST 2020
+2020-04-14 15:25:48.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:25:48 CST 2020
+2020-04-14 15:25:48.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:25:48 CST 2020
+2020-04-14 15:26:18.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:26:18 CST 2020
+2020-04-14 15:26:18.573  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:26:18 CST 2020
+2020-04-14 15:26:48.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:26:48 CST 2020
+2020-04-14 15:26:48.572  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:26:48 CST 2020
+2020-04-14 15:27:18.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:27:18 CST 2020
+2020-04-14 15:27:18.570  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:27:18 CST 2020
+2020-04-14 15:27:48.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:27:48 CST 2020
+2020-04-14 15:27:48.571  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:27:48 CST 2020
+2020-04-14 15:28:18.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:28:18 CST 2020
+2020-04-14 15:28:18.570  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:28:18 CST 2020
+2020-04-14 15:28:48.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:28:48 CST 2020
+2020-04-14 15:28:48.572  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:28:48 CST 2020
+2020-04-14 15:29:18.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:29:18 CST 2020
+2020-04-14 15:29:18.571  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:29:18 CST 2020
+2020-04-14 15:29:48.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:29:48 CST 2020
+2020-04-14 15:29:48.578  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:29:48 CST 2020
+2020-04-14 15:30:18.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:30:18 CST 2020
+2020-04-14 15:30:18.571  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:30:18 CST 2020
+2020-04-14 15:30:48.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:30:48 CST 2020
+2020-04-14 15:30:48.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:30:48 CST 2020
+2020-04-14 15:31:18.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:31:18 CST 2020
+2020-04-14 15:31:18.569  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:31:18 CST 2020
+2020-04-14 15:31:48.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:31:48 CST 2020
+2020-04-14 15:31:48.569  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:31:48 CST 2020
+2020-04-14 15:32:18.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:32:18 CST 2020
+2020-04-14 15:32:18.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:32:18 CST 2020
+2020-04-14 15:32:48.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:32:48 CST 2020
+2020-04-14 15:32:48.570  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:32:48 CST 2020
+2020-04-14 15:33:18.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:33:18 CST 2020
+2020-04-14 15:33:18.569  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:33:18 CST 2020
+2020-04-14 15:33:48.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:33:48 CST 2020
+2020-04-14 15:33:48.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:33:48 CST 2020
+2020-04-14 15:34:18.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:34:18 CST 2020
+2020-04-14 15:34:18.569  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:34:18 CST 2020
+2020-04-14 15:34:48.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:34:48 CST 2020
+2020-04-14 15:34:48.571  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:34:48 CST 2020
+2020-04-14 15:35:18.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:35:18 CST 2020
+2020-04-14 15:35:18.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:35:18 CST 2020
+2020-04-14 15:35:48.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:35:48 CST 2020
+2020-04-14 15:35:48.569  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:35:48 CST 2020
+2020-04-14 15:36:18.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:36:18 CST 2020
+2020-04-14 15:36:18.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:36:18 CST 2020
+2020-04-14 15:36:48.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:36:48 CST 2020
+2020-04-14 15:36:48.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:36:48 CST 2020
+2020-04-14 15:37:18.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:37:18 CST 2020
+2020-04-14 15:37:18.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:37:18 CST 2020
+2020-04-14 15:37:48.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:37:48 CST 2020
+2020-04-14 15:37:48.569  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:37:48 CST 2020
+2020-04-14 15:38:18.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:38:18 CST 2020
+2020-04-14 15:38:18.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:38:18 CST 2020
+2020-04-14 15:38:48.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:38:48 CST 2020
+2020-04-14 15:38:48.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:38:48 CST 2020
+2020-04-14 15:39:18.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:39:18 CST 2020
+2020-04-14 15:39:18.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:39:18 CST 2020
+2020-04-14 15:39:48.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:39:48 CST 2020
+2020-04-14 15:39:48.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:39:48 CST 2020
+2020-04-14 15:40:18.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:40:18 CST 2020
+2020-04-14 15:40:18.571  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:40:18 CST 2020
+2020-04-14 15:40:48.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:40:48 CST 2020
+2020-04-14 15:40:48.570  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:40:48 CST 2020
+2020-04-14 15:41:18.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:41:18 CST 2020
+2020-04-14 15:41:18.570  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:41:18 CST 2020
+2020-04-14 15:41:48.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:41:48 CST 2020
+2020-04-14 15:41:48.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:41:48 CST 2020
+2020-04-14 15:42:18.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:42:18 CST 2020
+2020-04-14 15:42:18.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:42:18 CST 2020
+2020-04-14 15:42:48.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:42:48 CST 2020
+2020-04-14 15:42:48.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:42:48 CST 2020
+2020-04-14 15:43:18.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:43:18 CST 2020
+2020-04-14 15:43:18.569  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:43:18 CST 2020
+2020-04-14 15:43:48.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:43:48 CST 2020
+2020-04-14 15:43:48.569  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:43:48 CST 2020
+2020-04-14 15:44:18.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:44:18 CST 2020
+2020-04-14 15:44:18.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:44:18 CST 2020
+2020-04-14 15:44:48.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:44:48 CST 2020
+2020-04-14 15:44:48.569  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:44:48 CST 2020
+2020-04-14 15:45:18.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:45:18 CST 2020
+2020-04-14 15:45:18.569  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:45:18 CST 2020
+2020-04-14 15:45:48.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:45:48 CST 2020
+2020-04-14 15:45:48.569  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:45:48 CST 2020
+2020-04-14 15:46:18.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:46:18 CST 2020
+2020-04-14 15:46:18.571  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:46:18 CST 2020
+2020-04-14 15:46:48.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:46:48 CST 2020
+2020-04-14 15:46:48.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:46:48 CST 2020
+2020-04-14 15:47:18.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:47:18 CST 2020
+2020-04-14 15:47:18.569  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:47:18 CST 2020
+2020-04-14 15:47:48.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:47:48 CST 2020
+2020-04-14 15:47:48.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:47:48 CST 2020
+2020-04-14 15:48:18.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:48:18 CST 2020
+2020-04-14 15:48:18.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:48:18 CST 2020
+2020-04-14 15:48:48.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:48:48 CST 2020
+2020-04-14 15:48:48.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:48:48 CST 2020
+2020-04-14 15:49:18.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:49:18 CST 2020
+2020-04-14 15:49:18.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:49:18 CST 2020
+2020-04-14 15:49:48.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:49:48 CST 2020
+2020-04-14 15:49:48.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:49:48 CST 2020
+2020-04-14 15:50:18.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:50:18 CST 2020
+2020-04-14 15:50:18.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:50:18 CST 2020
+2020-04-14 15:50:48.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:50:48 CST 2020
+2020-04-14 15:50:48.570  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:50:48 CST 2020
+2020-04-14 15:51:18.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:51:18 CST 2020
+2020-04-14 15:51:18.569  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:51:18 CST 2020
+2020-04-14 15:51:48.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:51:48 CST 2020
+2020-04-14 15:51:48.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:51:48 CST 2020
+2020-04-14 15:52:18.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:52:18 CST 2020
+2020-04-14 15:52:18.569  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:52:18 CST 2020
+2020-04-14 15:52:48.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:52:48 CST 2020
+2020-04-14 15:52:48.569  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:52:48 CST 2020
+2020-04-14 15:53:18.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:53:18 CST 2020
+2020-04-14 15:53:18.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:53:18 CST 2020
+2020-04-14 15:53:48.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:53:48 CST 2020
+2020-04-14 15:53:48.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:53:48 CST 2020
+2020-04-14 15:54:18.574  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:54:18 CST 2020
+2020-04-14 15:54:18.578  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:54:18 CST 2020
+2020-04-14 15:54:48.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:54:48 CST 2020
+2020-04-14 15:54:48.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:54:48 CST 2020
+2020-04-14 15:55:18.623  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:55:18 CST 2020
+2020-04-14 15:55:18.626  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:55:18 CST 2020
+2020-04-14 15:55:48.567  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:55:48 CST 2020
+2020-04-14 15:55:48.570  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:55:48 CST 2020
+2020-04-14 15:56:18.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:56:18 CST 2020
+2020-04-14 15:56:18.569  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:56:18 CST 2020
+2020-04-14 15:56:48.566  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 15:56:48 CST 2020
+2020-04-14 15:56:48.568  INFO 13656 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 15:56:48 CST 2020
+2020-04-14 16:09:48.803  INFO 3432 --- [restartedMain] l.m.community.CommunityApplication       : Starting CommunityApplication on DESKTOP-P1VCURD with PID 3432 (E:\Maven\community\target\classes started by user in E:\Maven\community)
+2020-04-14 16:09:48.813  INFO 3432 --- [restartedMain] l.m.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2020-04-14 16:09:48.967  INFO 3432 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-14 16:09:48.967  INFO 3432 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-04-14 16:09:51.680  INFO 3432 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2020-04-14 16:09:51.702  INFO 3432 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-14 16:09:51.703  INFO 3432 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2020-04-14 16:09:51.921  INFO 3432 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-14 16:09:51.922  INFO 3432 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2955 ms
+2020-04-14 16:09:53.838  INFO 3432 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-14 16:09:53.925  INFO 3432 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-04-14 16:09:54.060  INFO 3432 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-04-14 16:09:54.212  INFO 3432 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-04-14 16:09:54.248  INFO 3432 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 16:09:54 CST 2020
+2020-04-14 16:09:54.286  INFO 3432 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2020-04-14 16:09:54.291  INFO 3432 --- [restartedMain] l.m.community.CommunityApplication       : Started CommunityApplication in 6.184 seconds (JVM running for 7.967)
+2020-04-14 16:09:54.303  INFO 3432 --- [scheduling-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-04-14 16:09:54.588  INFO 3432 --- [scheduling-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-04-14 16:09:54.624  INFO 3432 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 16:09:54 CST 2020
+2020-04-14 16:10:24.248  INFO 3432 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 16:10:24 CST 2020
+2020-04-14 16:10:24.255  INFO 3432 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 16:10:24 CST 2020
+2020-04-14 16:10:54.249  INFO 3432 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 16:10:54 CST 2020
+2020-04-14 16:10:54.253  INFO 3432 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 16:10:54 CST 2020
+2020-04-14 16:11:06.825  INFO 3432 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-14 16:11:06.826  INFO 3432 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-14 16:11:06.834  INFO 3432 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2020-04-14 16:11:24.248  INFO 3432 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 16:11:24 CST 2020
+2020-04-14 16:11:24.251  INFO 3432 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 16:11:24 CST 2020
+2020-04-14 16:11:54.260  INFO 3432 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 16:11:54 CST 2020
+2020-04-14 16:11:54.266  INFO 3432 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 16:11:54 CST 2020
+2020-04-14 16:12:24.248  INFO 3432 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 16:12:24 CST 2020
+2020-04-14 16:12:24.250  INFO 3432 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 16:12:24 CST 2020
+2020-04-14 16:12:54.249  INFO 3432 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 16:12:54 CST 2020
+2020-04-14 16:12:54.252  INFO 3432 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 16:12:54 CST 2020
+2020-04-14 16:13:24.249  INFO 3432 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 16:13:24 CST 2020
+2020-04-14 16:13:24.256  INFO 3432 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 16:13:24 CST 2020
+2020-04-14 16:13:54.248  INFO 3432 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 16:13:54 CST 2020
+2020-04-14 16:13:54.250  INFO 3432 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 16:13:54 CST 2020
+2020-04-14 16:14:24.249  INFO 3432 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 16:14:24 CST 2020
+2020-04-14 16:14:24.251  INFO 3432 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 16:14:24 CST 2020
+2020-04-14 16:14:54.249  INFO 3432 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 16:14:54 CST 2020
+2020-04-14 16:14:54.250  INFO 3432 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 16:14:54 CST 2020
+2020-04-14 16:15:24.247  INFO 3432 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 16:15:24 CST 2020
+2020-04-14 16:15:24.253  INFO 3432 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 16:15:24 CST 2020
+2020-04-14 16:15:54.249  INFO 3432 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 16:15:54 CST 2020
+2020-04-14 16:15:54.251  INFO 3432 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 16:15:54 CST 2020
+2020-04-14 16:16:24.249  INFO 3432 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 16:16:24 CST 2020
+2020-04-14 16:16:24.252  INFO 3432 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 16:16:24 CST 2020
+2020-04-14 16:16:54.249  INFO 3432 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 16:16:54 CST 2020
+2020-04-14 16:16:54.254  INFO 3432 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 16:16:54 CST 2020
+2020-04-14 16:17:24.265  INFO 3432 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 16:17:24 CST 2020
+2020-04-14 16:17:24.271  INFO 3432 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 16:17:24 CST 2020
+2020-04-14 16:17:54.249  INFO 3432 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 16:17:54 CST 2020
+2020-04-14 16:17:54.255  INFO 3432 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 16:17:54 CST 2020
+2020-04-14 16:18:24.250  INFO 3432 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 16:18:24 CST 2020
+2020-04-14 16:18:24.258  INFO 3432 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 16:18:24 CST 2020
+2020-04-14 16:18:54.248  INFO 3432 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 16:18:54 CST 2020
+2020-04-14 16:18:54.250  INFO 3432 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 16:18:54 CST 2020
+2020-04-14 16:19:24.248  INFO 3432 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 16:19:24 CST 2020
+2020-04-14 16:19:24.251  INFO 3432 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 16:19:24 CST 2020
+2020-04-14 16:19:54.249  INFO 3432 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 16:19:54 CST 2020
+2020-04-14 16:19:54.252  INFO 3432 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 16:19:54 CST 2020
+2020-04-14 16:20:24.249  INFO 3432 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 16:20:24 CST 2020
+2020-04-14 16:20:24.252  INFO 3432 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 16:20:24 CST 2020
+2020-04-14 16:20:54.249  INFO 3432 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 16:20:54 CST 2020
+2020-04-14 16:20:54.255  INFO 3432 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 16:20:54 CST 2020
+2020-04-14 16:21:24.281  INFO 3432 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 16:21:24 CST 2020
+2020-04-14 16:21:24.288  INFO 3432 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 16:21:24 CST 2020
+2020-04-14 16:21:54.248  INFO 3432 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 16:21:54 CST 2020
+2020-04-14 16:21:54.251  INFO 3432 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 16:21:54 CST 2020
+2020-04-14 16:22:21.862  INFO 10200 --- [restartedMain] l.m.community.CommunityApplication       : Starting CommunityApplication on DESKTOP-P1VCURD with PID 10200 (E:\Maven\community\target\classes started by user in E:\Maven\community)
+2020-04-14 16:22:21.872  INFO 10200 --- [restartedMain] l.m.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2020-04-14 16:22:22.169  INFO 10200 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-14 16:22:22.169  INFO 10200 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-04-14 16:22:26.849  INFO 10200 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2020-04-14 16:22:26.867  INFO 10200 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-14 16:22:26.868  INFO 10200 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2020-04-14 16:22:27.105  INFO 10200 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-14 16:22:27.106  INFO 10200 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4936 ms
+2020-04-14 16:22:29.385  INFO 10200 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-14 16:22:29.537  INFO 10200 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-04-14 16:22:29.812  INFO 10200 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-04-14 16:22:29.980  INFO 10200 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-04-14 16:22:30.014  INFO 10200 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 16:22:30 CST 2020
+2020-04-14 16:22:30.084  INFO 10200 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2020-04-14 16:22:30.110  INFO 10200 --- [restartedMain] l.m.community.CommunityApplication       : Started CommunityApplication in 9.302 seconds (JVM running for 12.294)
+2020-04-14 16:22:30.127  INFO 10200 --- [scheduling-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-04-14 16:22:30.538  INFO 10200 --- [scheduling-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-04-14 16:22:30.588  INFO 10200 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 16:22:30 CST 2020
+2020-04-14 16:22:42.643  INFO 10200 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-14 16:22:42.643  INFO 10200 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-14 16:22:42.654  INFO 10200 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2020-04-14 16:23:00.016  INFO 10200 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 16:23:00 CST 2020
+2020-04-14 16:23:00.019  INFO 10200 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 16:23:00 CST 2020
+2020-04-14 16:23:30.015  INFO 10200 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 16:23:30 CST 2020
+2020-04-14 16:23:30.028  INFO 10200 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 16:23:30 CST 2020
+2020-04-14 16:24:00.016  INFO 10200 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 16:24:00 CST 2020
+2020-04-14 16:24:00.020  INFO 10200 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 16:24:00 CST 2020
+2020-04-14 16:24:30.015  INFO 10200 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 16:24:30 CST 2020
+2020-04-14 16:24:30.019  INFO 10200 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 16:24:30 CST 2020
+2020-04-14 16:25:00.015  INFO 10200 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 16:25:00 CST 2020
+2020-04-14 16:25:00.022  INFO 10200 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 16:25:00 CST 2020
+2020-04-14 16:25:30.016  INFO 10200 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule start: Tue Apr 14 16:25:30 CST 2020
+2020-04-14 16:25:30.018  INFO 10200 --- [scheduling-1] l.m.community.schedule.HotTagTasks       : hotTagSchedule stop: Tue Apr 14 16:25:30 CST 2020

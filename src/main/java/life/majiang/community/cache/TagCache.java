@@ -19,7 +19,7 @@ public class TagCache {
 
         TagDTO framework = new TagDTO();
         framework.setCategoryName("平台框架");
-        framework.setTags(Arrays.asList("spring","yii","struts","koa","express","flask"));
+        framework.setTags(Arrays.asList("spring","mybatis","bootstrap","vue","yii","struts","koa","express","flask"));
         tagDTOS.add(framework);
 
         TagDTO server = new TagDTO();
