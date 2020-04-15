@@ -8,7 +8,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @SpringBootApplication
 @EnableScheduling
 @MapperScan(basePackages = "life.majiang.community.mapper" )
-public class CommunityApplication {
+public class CommunityApplication  {
 
     public static void main(String[] args) {
         SpringApplication.run(CommunityApplication.class, args);
