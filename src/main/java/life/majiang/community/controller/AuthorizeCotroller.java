@@ -2,10 +2,9 @@ package life.majiang.community.controller;
 
 import life.majiang.community.entity.AccessTokenDTD;
 import life.majiang.community.entity.GithubUser;
-import life.majiang.community.mapper.UserMapper;
 import life.majiang.community.model.User;
 import life.majiang.community.provider.GithubProvider;
-import life.majiang.community.sevice.UserService;
+import life.majiang.community.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;

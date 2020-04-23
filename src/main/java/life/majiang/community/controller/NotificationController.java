@@ -3,7 +3,7 @@ package life.majiang.community.controller;
 import life.majiang.community.entity.NotificationDTO;
 import life.majiang.community.enums.NotificationTypeEnum;
 import life.majiang.community.model.User;
-import life.majiang.community.sevice.NotificationService;
+import life.majiang.community.service.NotificationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

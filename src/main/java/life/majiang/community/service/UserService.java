@@ -1,4 +1,4 @@
-package life.majiang.community.sevice;
+package life.majiang.community.service;
 
 import life.majiang.community.mapper.UserMapper;
 import life.majiang.community.model.User;

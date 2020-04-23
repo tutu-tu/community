@@ -3,6 +3,7 @@ package life.majiang.community.entity;
 import life.majiang.community.model.User;
 import lombok.Data;
 
+/*基本和mapper中的question一样，但是多个个User对象，减少表的关联，做传输用的*/
 @Data
 public class QuestionDTO {
         private Long id;
